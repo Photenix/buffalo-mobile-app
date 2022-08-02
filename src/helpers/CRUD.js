@@ -19,6 +19,13 @@ class CRUD {
         }
     }
     
+    /**
+     * 
+     * @param {string} name 
+     * @param {string} email 
+     * @param {string} phone 
+     * @param {string} password 
+     */
     post = async ( name, email, phone, password ) =>{
         try{
             const data = await axios.post( HTTP_URL + this.url ,{

@@ -66,7 +66,12 @@ const Form = ( props ) => {
 		if( e.target.type === 'email') allIsOk( e.target, RE.checkEmail )
 	}
 
-
+	/**
+	 * Cambia el color a nuestro input segun si es valio o no
+	 * @param {*} node 
+	 * @param {Function} callback 
+	 * @returns {Boolean}
+	 */
 	const allIsOk = ( node, callback ) => {
 		//console.log( callback( node.value ) )
 		if( node.value.length === 0 ) node.className = ""
@@ -115,7 +120,7 @@ const Form = ( props ) => {
 Form.protoType = {
 	inputs: PropTypes.arrayOf( PropTypes.object ).isRequired,
 	/**  
-	 * @inputs array this contain objects whit structure { t, n, ph }
+	 * @param {array} inputs array this contain objects whit structure { t, n, ph }
 	 * type = t
 	 * name = n
 	 * placeholder  = ph 
