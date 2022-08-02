@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 
 const Form = ( props ) => {
 
-    const { txt_main, txt_secundary, btn_text, inputs, go_page, txt_footer } = props
+    const { txt_main, txt_secondary, btn_text, inputs, go_page, txt_footer } = props
 
     const submit = (e) =>{
 		e.preventDefault()
@@ -81,7 +81,7 @@ const Form = ( props ) => {
         <div className="form-init">
 			<div className="form-init-header-text">
 				<h1>{ txt_main || "Hello" }</h1>
-				<h2>{ txt_secundary }</h2>
+				<h2>{ txt_secondary }</h2>
 			</div>
 
 			<form action="" 
@@ -115,17 +115,14 @@ const Form = ( props ) => {
 Form.protoType = {
 	inputs: PropTypes.arrayOf( PropTypes.object ).isRequired,
 	/**  
-	 * @inputs es un array que contiene objects estos contienen { t, n, ph }
+	 * @inputs array this contain objects whit structure { t, n, ph }
 	 * type = t
 	 * name = n
-	 * phaseholder  = ph 
+	 * placeholder  = ph 
 	*/
 	btn_text: PropTypes.string.isRequired,
-	/**
-	 * @btn_text coloca el texto que tiene tu submit btn 
-	*/
 	txt_main: PropTypes.string,
-	txt_secundary: PropTypes.string,
+	txt_secondary: PropTypes.string,
 	go_page: PropTypes.string,
 	txt_footer: PropTypes.string,
 }
