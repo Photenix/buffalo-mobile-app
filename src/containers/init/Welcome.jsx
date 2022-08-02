@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
-import man1 from '../assets/man_1.png'
-import man2 from '../assets/man_2.png'
-import man3 from '../assets/man_3.png'
+import man1 from '../../assets/man_1.png'
+import man2 from '../../assets/man_2.png'
+import man3 from '../../assets/man_3.png'
 
-import '../styles/sass/Welcome.scss'
+import '../../styles/sass/Welcome.scss'
 
 
 const Welcome = () => {

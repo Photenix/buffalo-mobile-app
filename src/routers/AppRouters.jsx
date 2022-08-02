@@ -5,24 +5,16 @@ import LogIn from '../containers/init/LogIn';
 import LogUp from '../containers/init/LogUp';
 import Welcome from '../containers/init/Welcome';
 
-import NavBarMovil from '../modules/NavBarMovil';
-
 const AppRouters = () => {
 
-    const { isNavBar } = useContext( General )
+    /* const { isNavBar } = useContext( General )
 
     useEffect( () =>{
         //console.log( isNavBar );
-    },[ isNavBar ])
+    },[ isNavBar ]) */
 
     return (
         <BrowserRouter>
-            {   
-            
-                isNavBar 
-                    ?<NavBarMovil/>
-                    :''
-            }
             
             <Routes>
                 <Route path="/" element={ <Init/> }/>

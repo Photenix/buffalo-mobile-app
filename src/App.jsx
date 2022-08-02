@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import Welcome from './containers/init/Welcome';
 import General from './context/General'
+import AppRouters from './routers/AppRouters';
 import './styles/App.css'
 
 const example = () => {
@@ -38,7 +39,7 @@ export {example}
 function App() {
 return (
     <General.Provider value={"hi"}>
-        <Welcome/>
+        <AppRouters/>
     </General.Provider>
 )
 }

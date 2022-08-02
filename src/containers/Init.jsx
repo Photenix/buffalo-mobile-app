@@ -6,21 +6,26 @@ import Logo from '../assets/Logo.png'
 
 const Init = () => {
     const toWelcome = useNavigate()
-    useEffect( () => {
+    
+    /* useEffect( () => {
         setTimeout( ()=>{
             toWelcome('/welcome')
-        }, 1000)
-    },[])
+        }, 3000)
+    },[]) */
 
     const style = {
         'display': 'flex',
+        'flex-direction': 'column',
         "justify-content": 'center',
-        'aling-items': 'center'
+        'align-items': 'center',
+        "height": "100vH",
+        'font-family': 'Racing Sans One',
     }
 
     return (
         <div style={ style }>
             <img src={ Logo } alt="" />
+            <h1>Buffalo</h1>
         </div>
     );
 };
