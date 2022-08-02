@@ -68,16 +68,16 @@ const Welcome = () => {
                 <div className="welcome-footer">
                     <div className="welcome-text" id='welcome-text'>
                         <div className="active">
-                            <h1>Test 1</h1>
-                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi maiores</h2>
+                            <h1>Workout</h1>
+                            <h2>Start training with usand build muscle or lose weight</h2>
                         </div>
                         <div>
-                            <h1>Test 2</h1>
-                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi maiores</h2>
+                            <h1>Discipline</h1>
+                            <h2>Develop discipline in yourself train every day</h2>
                         </div>
                         <div>
-                            <h1>Test 3</h1>
-                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi maiores</h2>
+                            <h1>Сharacter</h1>
+                            <h2>Cultivate in you an iron character for training</h2>
                         </div>
                     </div>
                     <div className="welcome-points" id='welcome-points'>
