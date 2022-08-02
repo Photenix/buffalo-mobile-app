@@ -1,0 +1,83 @@
+@import url(../var.css);
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0 16px 58px; */
+    padding-bottom: 40px;
+
+    &-img{
+        margin: 0 0 60px;
+        display: flex;
+        width: 100%;
+        position: relative;
+        img{
+            display: none;
+            
+        }
+        .active{
+            display: flex !important;
+            width: 100%;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1F233E 100%);
+        }
+    }
+
+    &-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 0 16px;
+        width: calc( 100% - ( 16px * 2));
+    }
+
+    &-text{
+        display: flex;
+        text-align: center;
+        width: 65%;
+        h2{
+            margin-top: 8px;
+            font-family: 400;
+        }
+        div{ display: none;}
+        .active{ display: block;}
+    }
+
+    button{ border: none;}
+
+    &-points{
+        display: flex;
+        gap: 8px;
+        button{
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: var(--main-color);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .active{
+            width: 28px !important;
+            border-radius: 30px;
+            transition: 0.2s;
+        }
+    }
+
+    .next{
+        width: 100%;
+        height: 44px;
+        border-radius: 15px;
+        background: var(--main-color);
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
